@@ -1,7 +1,7 @@
-num1 = 1
-num2 = 2
+num1 = 0
+num2 = 1
+next_value = 1
 sum = 0
-next_value = 0
 
 
 while sum <= 4000000:
