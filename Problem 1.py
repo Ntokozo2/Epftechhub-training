@@ -1,7 +1,12 @@
 endNum = 999
 sum = 0
-for i in range(0, endNum+1):
-    if i % 3 == 0 or i % 5 == 0:
-        sum += i
-print(sum)
+ 
+while endNum > 0:
+   num1 = endNum % 3
+   num2 = endNum % 5
+   if num1 == 0 or num2 == 0:
+     sum += endNum
+   endNum -= 1
+   print(sum)
+
 
