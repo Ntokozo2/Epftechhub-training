@@ -1,0 +1,26 @@
+<script>
+    function isPalindrome(n) {
+ if (typeof n !== 'number') return '${n} is not a number';
+ n = n.toString().split('');
+  for (let i = 0; i < n.length / 2; i++) {
+    if (n[i] !== n[n.length - 1 - i])
+     return false;
+}
+  return true;
+}
+
+function largestPalindrome() {
+  let largestPalindrome = 0;
+  for (let i = 999; i > 99; i--) {
+    for (let j = 999; j > 99; j--) {
+        
+      if (isPalindrome(i * j) && i * j > largestPalindrome)
+        largestPalindrome = i * j;
+    }
+  }
+  return largestPalindrome;
+}
+
+console.log("The largest palindrome made from the product of two 3-digit numbers is:", largestPalindrome());
+
+</script>

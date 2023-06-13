@@ -9,13 +9,14 @@ function isPalindrome(number){
        } 
     }
     
+    
   return true;
 }
 
 function largestPalindrome(){
     let largest = 0;
 
-    for(let x = 999; x>= 100; x--){
+    for(let x = 999; x >= 100; x--){
       for(let y = 999; y >= 100; y--){
         let product = x * y;
         if(isPalindrome(product) && product > largest){
