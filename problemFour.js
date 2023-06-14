@@ -4,7 +4,7 @@ function isPalindrome(number){
     number = number.toString().split('');
     
     for(var i = 0; i < (number.length / 2); i++){
-       if(a[i] !== a[a.length - 1 - i]){
+       if(number[i] !== number[number.length - 1 - i]){
         return false;
        } 
     }
