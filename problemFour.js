@@ -28,4 +28,4 @@ function largestPalindrome(){
  return largest;  
 }
 
-console.log(largestPalindrome(999));
+console.log(largestPalindrome());
